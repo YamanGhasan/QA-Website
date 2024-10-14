@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Global Tags */
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgb(35, 35, 85);
+}
+
+span {
+  font-size: 0.9rem;
+  color: #757373;
+}
+
+h6 {
+  font-size: 1.1rem;
+  color: rgb(24, 24, 49);
+}
+
+/* Navigation */
+nav{
+  position: fixed;
+  display: flex;
+  width: 100%;
+background-color: #fff;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  box-shadow: 2px 2px 10px rgba(0,0,0.15);
+}
+
+nav img{
+  width:150px;
+  cursor:pointer;
+}
+
+nav .navigation ul{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav .navigation ul li{
+ list-style: none;
+ margin-left: 30px;
+
+}
+
+nav .navigation ul li a{
+  text-decoration: none;
+  color: rgb(21,21,100);
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+nav .navigation ul li a:hover{
+  color:#FDC93B;
+
+}
+/* Home */
+#home{
+   background-image: linear-gradient(rgba(9,5,54,0.3),rgba(5,4,46,0.7)),url("images/back.jpg");
+   width: 100%;
+   height: 100vh;
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   padding-top: 40px;
+}
+#home h2{
+  color: #fff;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+#home p{
+  width: 50%;
+  color: #fff;
+  font-size: 0.9rem;
+line-height: 25px;
+}
+#home .btn{
+  margin-top: 30px;
+}
+#home a{
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 13px 35px;
+  background-color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+#home a.blue{
+  color: #fff;
+  background: rgb(21,21,100);
+
+}
+
+#home a.blue:hover{
+  color:  rgb(21,21,100);
+  background: #fff  ;
+
+}
+#home a.yellow{
+  color: #fff;
+  background:  #FDC93B;
+
+}
+
+#home a.yellow:hover{
+  color:  #FDC93B;
+  background: #fff  ;
+
+}
+/* features */
+#features{
+  padding:5vm 8vm 0 8vm;
+  text-align: center;
+  margin-top: 70px;
+}
+
+#features .fea-base{ 
+ display: grid;
+ grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+ grid-gap:1rem ;
+ margin-top:50px;
+ padding: 20px; 
+  }
+#features .fea-box{ 
+background: #f9f9ff;
+text-align: start;
+}
+#features .fea-box i{ 
+  font-size: 2.2rem;
+  color: rgb(44,44,80);
+}
+
+#features .fea-box h3{ 
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(46,46,59);
+  padding: 13px 0 7px 0;
+}
+#features .fea-box p{ 
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: rgb(70,70,87);
+ }
+/* course */
+#course{
+  padding:8vm 8vm 0 8vm ;
+  text-align: center;
+  margin-top: 70px;
+} 
+
+#course .course-box{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+  grid-gap:1rem ;
+  margin-top:50px;
+  padding: 20px; 
+}
+#course .courses{
+  text-align: start;
+  background: #f9f9ff;
+  height: 100%;
+}
+#course .courses img{
+  width: 100%;
+  height: 60%;
+  background-size: cover;
+  background-position: center;
+}
+#course .courses .details{
+  padding: 15px 15px 0 15px;
+}
+
+#course .courses .details i{
+color:#FDC93B;
+font-size: .9rem;
+}
+  
+.add-to-student {
+  color: #FDC93B;
+  background: rgb(21, 21, 100);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition:   0.3s, color 0.3s;
+}
+
+.add-to-student:hover {
+  color: rgb(21, 21, 100);
+  background: #FDC93B;
+}
+
+#studentModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#studentForm {
+  background-color: white;  
+  border-radius: 8px;  
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  
+  padding: 20px;  
+  width: 300px; 
+}
+
+input {
+  margin: 10px 0; 
+  padding: 10px; 
+  width: calc(100% - 22px); 
+  border-radius: 5px;  
+  border: 1px solid #ccc;  
+  transition: border-color 0.3s;  
+}
+
+input:focus {
+  border-color: rgb(21, 21, 100);  
+}
+
+button {
+  background-color:rgb(21, 21, 100);  
+  color: white;  
+  border: none;  
+  padding: 10px;  
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s;  
+}
+
+button:hover {
+  background-color:  #FDC93B; 
+}
+/* registration */
+
+/* experts */
+
+/* footer */
+
+/* About */
+
+/* Blog */
+
+/* Course_inner */
+
+/* contact */
+
+/* responsive */
+
+@media (max-width: 769px) {
+}
+
+@media (max-width: 475px) {
+}

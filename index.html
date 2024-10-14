@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tech2 etc Tutorial</title>
+
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+        <link rel="stylesheet" href="style.css">
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- Include Firebase SDK -->
+<script type="module" src="https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js"></script>
+<script type="module" src="https://www.gstatic.com/firebasejs/9.1.0/firebase-database.js"></script>
+
+<!-- Link to your app.js -->
+<script type="module" src="app.js" defer></script>
+</head>
+    
+
+    <body>
+
+        <!-- Navigation -->
+<nav>
+    <img src="images/logo.svg" alt="">
+    <div class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+      <!-- Home -->
+
+<section id="home"> 
+    <h2>Welcome to Your Quality Assurance Learning Journey</h2>
+    <p>Unlock the potential of software quality with our comprehensive courses designed for aspiring QA professionals. Whether you're a beginner or looking to enhance your skills, our platform offers a variety of resources, hands-on projects, and expert guidance to help you master the art of testing and quality assurance.</p>
+    <div class="btn">
+        <a class="blue" href="#">Learn More</a>
+        <a class="yellow" href="#">Visit Courses</a>
+    </div>
+</section>
+    <!-- Features -->
+<section id="features">
+    <h1>Awesome Features</h1>
+    <p>Explore our unique features designed to enhance your learning experience and equip you with the skills needed to excel in Quality Assurance.</p>
+    <div class="fea-base">
+        <div class="fea-box">
+            <i class="fas fa-graduation-cap"></i>
+            <h3>Expert-Led Courses</h3>
+            <p>Learn from industry professionals with years of experience in software testing and quality assurance. Our courses cover both foundational concepts and advanced techniques.</p>
+        </div>
+        <div class="fea-box">
+            <i class="fas fa-tools"></i>
+            <h3>Hands-On Projects</h3>
+            <p>Apply your knowledge through practical projects that simulate real-world scenarios. Gain valuable experience using popular QA tools like Selenium, JIRA, and more.</p>
+        </div>
+        <div class="fea-box">
+            <i class="fas fa-comments"></i>
+            <h3>Community Support</h3>
+            <p>Join a vibrant community of learners and professionals. Share insights, ask questions, and collaborate on projects to enhance your understanding of QA practices.</p>
+        </div>
+      
+    </div>
+</section>
+
+ 
+        <!-- Courses -->
+ 
+        <section id="course">
+            <h1>Our Popular Courses</h1>
+            <p>Explore our selection of top-rated courses designed to equip you with essential QA skills and knowledge.</p>
+        
+            <div class="course-box">
+                <div class="courses">
+                    <img src="images/c6.jpg" alt="">
+                    <div class="details">
+                        <span>Updated 13/10/24</span>
+                        <h6>Introduction to Quality Assurance</h6>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(234)</span>
+                        </div>
+   <!-- Add Student Button -->
+   <button class="add-to-student" onclick="openForm('Introduction to Quality Assurance')">Add Student</button>         
+           </div>
+                </div>
+        
+        
+                <div class="courses">
+                    <img src="images/c1.jpg" alt="">
+                    <div class="details">
+                        <span>Updated 13/10/24</span>
+                        <h6>Automated Testing with Selenium</h6>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(234)</span>
+                        </div>
+ <!-- Add Student Button -->
+ <button class="add-to-student" onclick="openForm('Automated Testing with Selenium')">Add Student</button>                             </div>
+                 </div>
+        
+                <div class="courses">
+                    <img src="images/c2.jpg" alt="">
+                    <div class="details">
+                        <span>Updated 13/10/24</span>
+                        <h6>Manual Testing Techniques</h6>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(234)</span>
+                        </div>
+<!-- Add Student Button -->
+<button class="add-to-student" onclick="openForm('Manual Testing Techniques')">Add Student</button>
+                    </div>
+                 </div>
+        
+                <div class="courses">
+                    <img src="images/c3.jpg" alt="">
+                    <div class="details">
+                        <span>Updated 13/10/24</span>
+                        <h6>Performance Testing Fundamentals</h6>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(234)</span>
+                        </div>
+ <!-- Add Student Button -->
+ <button class="add-to-student" onclick="openForm('Performance Testing Fundamentals')">Add Student</button>                             </div>
+                 </div>
+        
+                <div class="courses">
+                    <img src="images/c4.jpg" alt="">
+                    <div class="details">
+                        <span>Updated 13/10/24</span>
+                        <h6>API Testing with Postman</h6>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(234)</span>
+                        </div>
+ <!-- Add Student Button -->
+ <button class="add-to-student" onclick="openForm('API Testing with Postman')">Add Student</button>                             </div>
+                 </div>
+        
+                 <div class="courses">
+                    <img src="images/c5.jpg" alt="">
+                    <div class="details">
+                        <span>Updated 13/10/24</span>
+                        <h6>Agile Testing Practices</h6>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(234)</span>
+                        </div>
+ <!-- Add Student Button -->
+ <button class="add-to-student" onclick="openForm('Agile Testing Practices')">Add Student</button>         
+                    </div>
+                 </div>
+        
+            </div> <!-- End of course-box -->
+        </section> 
+
+          <!-- Modal Form for Adding Student -->
+          <div id="studentModal" style="display:none;">
+            <form id="studentForm" onsubmit="submitForm(event)">
+                <input type="text" id="studentName" placeholder="Student Name" required />
+                <input type="email" id="studentEmail" placeholder="Student Email" required />
+                <input type="hidden" id="courseName" /> <!-- Hidden field to store course name -->
+                <button type="submit">Add Student</button>
+                <button type="button" onclick="closeForm()">Cancel</button> <!-- Cancel button -->
+            </form>
+        </div>
+
+      
+        <!-- Registration -->
+
+        <!-- Profiles -->
+
+        <!-- Footer -->
+
+
+        <script>
+
+            // Navaigation Bar
+
+        </script>
+
+
+    </body>
+
+</html>
